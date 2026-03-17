@@ -40,21 +40,22 @@ function App() {
       const parallaxElements = document.querySelectorAll('.parallax-img');
       parallaxElements.forEach((element) => {
         const speed = 0.03;
-        const elementRect = element.getBoundingClientRect();
+        const htmlElement = element as HTMLElement;
+        const elementRect = htmlElement.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         
         // Only apply parallax when element is in viewport
         if (elementRect.top < windowHeight && elementRect.bottom > 0) {
           // Calculate parallax based on element's position in viewport
           const scrollPosition = window.scrollY;
-          const elementTop = element.offsetTop;
+          const elementTop = htmlElement.offsetTop;
           const yPos = -((scrollPosition - elementTop) * speed);
           
           // Limit the parallax range to prevent images from moving too much
           const maxParallax = 20;
           const limitedYPos = Math.max(-maxParallax, Math.min(maxParallax, yPos));
           
-          element.style.transform = `translateY(${limitedYPos}px)`;
+          htmlElement.style.transform = `translateY(${limitedYPos}px)`;
         }
       });
 

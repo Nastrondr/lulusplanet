@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../content/i18n';
 import '../App.css';
@@ -9,8 +9,7 @@ const BeyondDesign = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   
-  // Refs for sections
-  const sectionsRef = useRef<HTMLCollectionOf<HTMLElement> | null>(null);
+
 
   useEffect(() => {
     // Section visibility check

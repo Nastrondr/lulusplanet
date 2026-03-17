@@ -41,4 +41,4 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({
   );
 };
 
-export
+export default ProjectHero;
