@@ -3,6 +3,10 @@ import { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../content/i18n';
 import '../App.css';
+import beyonddesign2 from '../assets/image/beyonddesign-2.png';
+import beyonddesign4 from '../assets/image/beyonddesign-4.png';
+import beyonddesign5 from '../assets/image/beyonddesign-5.png';
+import beyonddesign from '../assets/image/beyonddesign.png';
 
 const BeyondDesign = () => {
   const navigate = useNavigate();
@@ -67,7 +71,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/assets/beyonddesign-2.png" alt="Music" className="project-image parallax-img" />
+            <img src={beyonddesign2} alt="Music" className="project-image parallax-img" />
           </div>
         </section>
         
@@ -78,7 +82,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/assets/beyonddesign-4.png" alt="Writing and Speaking" className="project-image parallax-img" />
+            <img src={beyonddesign4} alt="Writing and Speaking" className="project-image parallax-img" />
           </div>
         </section>
         
@@ -89,7 +93,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="single-image-container">
-            <img src="/assets/beyonddesign-5.png" alt="Games and Experimental Creation" className="project-image parallax-img" />
+            <img src={beyonddesign5} alt="Games and Experimental Creation" className="project-image parallax-img" />
             <a href="https://shamitahmed.itch.io/monstercleaninginc" target="_blank" rel="noopener noreferrer" className="project-link">
               Cleaning Monster CMTK 2024
             </a>
@@ -103,7 +107,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/assets/beyonddesign.png" alt="Cross-Cultural Experience" className="project-image parallax-img" />
+            <img src={beyonddesign} alt="Cross-Cultural Experience" className="project-image parallax-img" />
           </div>
         </section>
         
