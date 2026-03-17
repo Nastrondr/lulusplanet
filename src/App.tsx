@@ -96,7 +96,7 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <a href="#" className="logo">
-            <img src="/src/assets/image/logo.png" alt="Logo" className="logo-icon" />
+            <img src="/logo.png" alt="Logo" className="logo-icon" />
             Lulusplanet
           </a>
           <div className="nav-links">

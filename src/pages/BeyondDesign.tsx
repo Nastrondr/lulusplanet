@@ -67,7 +67,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/src/assets/image/beyonddesign-2.png" alt="Music" className="project-image parallax-img" />
+            <img src="/assets/beyonddesign-2.png" alt="Music" className="project-image parallax-img" />
           </div>
         </section>
         
@@ -78,7 +78,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/src/assets/image/beyonddesign-4.png" alt="Writing and Speaking" className="project-image parallax-img" />
+            <img src="/assets/beyonddesign-4.png" alt="Writing and Speaking" className="project-image parallax-img" />
           </div>
         </section>
         
@@ -89,7 +89,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="single-image-container">
-            <img src="/src/assets/image/beyonddesign-5.png" alt="Games and Experimental Creation" className="project-image parallax-img" />
+            <img src="/assets/beyonddesign-5.png" alt="Games and Experimental Creation" className="project-image parallax-img" />
             <a href="https://shamitahmed.itch.io/monstercleaninginc" target="_blank" rel="noopener noreferrer" className="project-link">
               Cleaning Monster CMTK 2024
             </a>
@@ -103,7 +103,7 @@ const BeyondDesign = () => {
             <p key={index}>{paragraph}</p>
           ))}
           <div className="image-grid">
-            <img src="/src/assets/image/beyonddesign.png" alt="Cross-Cultural Experience" className="project-image parallax-img" />
+            <img src="/assets/beyonddesign.png" alt="Cross-Cultural Experience" className="project-image parallax-img" />
           </div>
         </section>
         
