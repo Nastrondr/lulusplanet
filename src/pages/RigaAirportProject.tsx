@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import '../App.css';
 import rigaA1 from '../assets/image/截屏2026-03-17 01.49.02.png';
 import rigaA2 from '../assets/image/riga-a-2.png';
@@ -13,6 +14,32 @@ const RigaAirportProject = () => {
   const navigate = useNavigate();
   const { lang } = useLanguage();
   const t = translations[lang];
+
+  useEffect(() => {
+    // Section visibility check
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all project-section elements
+    const sections = document.querySelectorAll('.project-section');
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
 
   return (
     <div className="project-detail-page">

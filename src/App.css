@@ -720,6 +720,15 @@ body {
   margin-bottom: 1rem;
 }
 
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
 /* 项目详情页面 */
 .project-detail-page {
   padding: 120px 0 80px;

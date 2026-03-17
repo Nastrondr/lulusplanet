@@ -6,6 +6,7 @@ import becaredCover from './assets/image/becared-cover.png';
 import beingCover from './assets/image/being-cover.png';
 import goalmasterCover from './assets/image/goalmaster-cover.png';
 import mythosCover from './assets/image/mythos-cover.png';
+import logo from './assets/image/logo.png';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {
@@ -96,7 +97,7 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <a href="#" className="logo">
-            <img src="/logo.png" alt="Logo" className="logo-icon" />
+            <img src={logo} alt="Logo" className="logo-icon" />
             Lulusplanet
           </a>
           <div className="nav-links">
@@ -286,6 +287,7 @@ function App() {
                     </div>
                     <p>{item.period}</p>
                     <p>{item.role}</p>
+                    {item.description && <p className="project-description">{item.description}</p>}
                   </div>
                 </Link>
               );

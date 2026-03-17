@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import '../App.css';
 import goalmasterA1 from '../assets/image/goalmaster-a-1.png';
 import goalmasterA2 from '../assets/image/goalmaster-a-2.png';
@@ -13,6 +14,32 @@ const GoalMasterProject = () => {
   const navigate = useNavigate();
   const { lang } = useLanguage();
   const t = translations[lang];
+
+  useEffect(() => {
+    // Section visibility check
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all project-section elements
+    const sections = document.querySelectorAll('.project-section');
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
 
   return (
     <div className="project-detail-page">

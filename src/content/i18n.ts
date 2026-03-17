@@ -99,17 +99,20 @@ export const translations = {
           {
             title: "ChorockSoft AI 赛事预测 APP 使用体验优化",
             period: "2024.9-2024.10",
-            role: "服务设计研究员"
+            role: "服务设计研究员",
+            description: "为ChorockSoft体育赛事预测APP优化用户体验，提升产品竞争力。通过深入的用户研究和设计优化，旨在提升产品的易用性、吸引力和用户粘性。"
           },
           {
             title: "里加国际机场旅客体验优化项目",
             period: "2023.9-2024.1",
-            role: "服务设计顾问"
+            role: "服务设计顾问",
+            description: "通过服务设计方法提升里加国际机场的旅客体验，优化服务流程与空间设计。关注旅客在机场的全程体验，从到达机场、值机、安检、候机到登机的各个环节，旨在创造更加顺畅、舒适和愉悦的机场体验。"
           },
           {
             title: "中国联通机场通信服务创新项目（天府国际机场）",
             period: "2023.6-2023.7",
             role: "销售与用户体验研究员",
+            description: "为天府国际机场提供通信服务创新方案，提升旅客网络体验与服务质量。通过深入了解旅客和机场工作人员的通信需求，设计了一系列创新的通信服务解决方案。",
             internship: true,
             expired: true
           },
@@ -117,6 +120,7 @@ export const translations = {
             title: "AI算力平台产品规划与官网设计",
             period: "2026.3 — 至今",
             role: "产品规划 · 用户研究 · 前端界面设计",
+            description: "为中科光之源设计AI算力平台产品体系与官网信息架构，使复杂的技术产品更易理解。构建一套面向AI应用场景的算力产品体系，并设计对应的官网信息架构与交互界面，使潜在客户能够快速理解不同算力产品及其应用价值。",
             internship: true
           }
         ]
@@ -619,24 +623,28 @@ export const translations = {
           {
             title: "ChorockSoft AI Sports Prediction APP User Experience Optimization",
             period: "2024.9-2024.10",
-            role: "Service Design Researcher"
+            role: "Service Design Researcher",
+            description: "Optimized user experience for ChorockSoft sports prediction APP to enhance product competitiveness. Through in-depth user research and design optimization, aimed to improve the product's usability, attractiveness, and user stickiness."
           },
           {
             title: "Riga International Airport Passenger Experience Optimization Project",
             period: "2023.9-2024.1",
-            role: "Service Design Consultant"
+            role: "Service Design Consultant",
+            description: "Enhanced passenger experience at Riga International Airport through service design methods, optimizing service processes and spatial design. Focused on the entire passenger journey from arrival, check-in, security, waiting to boarding, aiming to create a smoother, more comfortable and enjoyable airport experience."
           },
           {
             title: "China Unicom Airport Communication Service Innovation Project (Tianfu International Airport)",
             period: "2023.6-2023.7",
             role: "Sales and User Experience Researcher",
+            description: "Provided innovative communication service solutions for Tianfu International Airport to enhance passenger network experience and service quality. Through in-depth understanding of the communication needs of passengers and airport staff, designed a series of innovative communication service solutions.",
             internship: true,
             expired: true
           },
           {
-            title: "AI Computing Platform Product Strategy & Platform Design",
+            title: "AI Computing Platform Product Planning and Official Website Design",
             period: "2026.3 — Present",
             role: "Product Planning · User Research · Front-end Interface Design",
+            description: "Designed AI computing platform product system and official website information architecture for中科光之源, making complex technical products more understandable. Built a set of computing power product system for AI application scenarios, and designed corresponding official website information architecture and interactive interface, enabling potential customers to quickly understand different computing power products and their application value.",
             internship: true
           }
         ]
